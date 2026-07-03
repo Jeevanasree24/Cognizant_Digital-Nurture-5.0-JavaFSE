@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.cognizant.springcore.Address">
+        <property name="city" value="Chennai"/>
+        <property name="state" value="Tamil Nadu"/>
+    </bean>
+
+    <bean id="employee" class="com.cognizant.springcore.Employee">
+        <property name="id" value="101"/>
+        <property name="name" value="Jeevanasree"/>
+        <property name="address" ref="address"/>
+    </bean>
+
+</beans>

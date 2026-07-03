@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Constructor Injection -->
+    <bean id="address" class="com.cognizant.injection.Address">
+        <constructor-arg value="Chennai"/>
+        <constructor-arg value="Tamil Nadu"/>
+    </bean>
+
+    <!-- Constructor + Setter Injection -->
+    <bean id="employee" class="com.cognizant.injection.Employee">
+        <constructor-arg value="101"/>
+        <constructor-arg value="Jeevanasree"/>
+        <property name="address" ref="address"/>
+    </bean>
+
+</beans>
