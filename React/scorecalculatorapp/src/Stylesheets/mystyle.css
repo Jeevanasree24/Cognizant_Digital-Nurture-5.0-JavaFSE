@@ -1,0 +1,27 @@
+/* Simple styles for CalculateScore component */
+.container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.heading {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: #222;
+  text-align: center;
+}
+
+.paragraph {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.paragraph strong {
+  color: #111;
+}
