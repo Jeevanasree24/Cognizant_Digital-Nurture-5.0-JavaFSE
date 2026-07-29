@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-rest-handson
+
+# JWT Configuration
+jwt:
+  secret: "MySuperSecretKeyForJWTHandsOn2024SpringBoot3MustBe256BitsLong!"
+  expiration-ms: 3600000  # 1 hour
+
+# Logging
+logging:
+  level:
+    com.example.springrest: INFO
+    org.springframework.security: DEBUG

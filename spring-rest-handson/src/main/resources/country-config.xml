@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Country beans loaded from Spring XML Configuration -->
+    <bean id="country-india" class="com.example.springrest.model.Country">
+        <property name="code" value="IN"/>
+        <property name="name" value="India"/>
+        <property name="population" value="1428627663"/>
+        <property name="capital" value="New Delhi"/>
+    </bean>
+
+    <bean id="country-usa" class="com.example.springrest.model.Country">
+        <property name="code" value="US"/>
+        <property name="name" value="United States of America"/>
+        <property name="population" value="339996563"/>
+        <property name="capital" value="Washington, D.C."/>
+    </bean>
+
+    <bean id="country-uk" class="com.example.springrest.model.Country">
+        <property name="code" value="GB"/>
+        <property name="name" value="United Kingdom"/>
+        <property name="population" value="67736802"/>
+        <property name="capital" value="London"/>
+    </bean>
+
+    <bean id="country-japan" class="com.example.springrest.model.Country">
+        <property name="code" value="JP"/>
+        <property name="name" value="Japan"/>
+        <property name="population" value="123294513"/>
+        <property name="capital" value="Tokyo"/>
+    </bean>
+
+    <bean id="country-france" class="com.example.springrest.model.Country">
+        <property name="code" value="FR"/>
+        <property name="name" value="France"/>
+        <property name="population" value="64756584"/>
+        <property name="capital" value="Paris"/>
+    </bean>
+
+    <bean id="country-germany" class="com.example.springrest.model.Country">
+        <property name="code" value="DE"/>
+        <property name="name" value="Germany"/>
+        <property name="population" value="83294633"/>
+        <property name="capital" value="Berlin"/>
+    </bean>
+
+    <bean id="country-australia" class="com.example.springrest.model.Country">
+        <property name="code" value="AU"/>
+        <property name="name" value="Australia"/>
+        <property name="population" value="26439111"/>
+        <property name="capital" value="Canberra"/>
+    </bean>
+
+    <bean id="country-brazil" class="com.example.springrest.model.Country">
+        <property name="code" value="BR"/>
+        <property name="name" value="Brazil"/>
+        <property name="population" value="216422446"/>
+        <property name="capital" value="Brasília"/>
+    </bean>
+
+</beans>
